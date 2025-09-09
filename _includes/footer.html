@@ -2,18 +2,5 @@
     <div class="footer-content">
         <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}.  All Rights Reserved.</p>
 
-        <div class="social-links">
-            {% if site.author.links.github %}
-                <a href="https://github.com/{{ site.author.links.github }}" target="_blank" rel="noopener">GitHub</a>
-            {% endif %}
-            {% if site.author.links.twitter %}
-                <a href="https://twitter.com/{{ site.author.links.twitter }}" target="_blank" rel="noopener">Twitter</a>
-            {% endif %}
-            {% if site.author.links.email %}
-                <a href="mailto:{{ site.author.links.email }}" rel="noopener">Email</a>
-            {% endif %}
-        </div>
-
-        <p>由 <a href="https://jekyllrb.com/" target="_blank" rel="noopener">Jekyll</a> 驱动，主题为 <a href="https://github.com/guominyu-ai/guominyu-ai.github.io" target="_blank" rel="noopener">Simplicity</a>。</p>
     </div>
 </footer>
