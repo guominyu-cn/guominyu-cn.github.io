@@ -1,0 +1,38 @@
+# 站点设置
+title: "郭敏宇的AI笔记"
+description: "专注于分享人工智能、技术思考和阅读心得。"
+baseurl: ""
+url: "https://guominyu-ai.github.io" # 替换为你的网址
+language: "zh-CN"
+author:
+  name: "郭敏宇"
+  avatar: "/assets/images/bio-photo.jpg" # 确保你有这个图片
+  bio: "这里是你的简短自我介绍。"
+  links:
+    github: "guominyu-ai"
+    # twitter: "your_twitter" # 取消注释并填写
+    # email: "your@email.com"
+
+# 构建设置
+markdown: kramdown
+permalink: /:title/
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# 自定义设置
+simplicity:
+  theme_mode: "auto" # auto, light, dark
+  show_reading_time: true
+  social_links:
+    github: "guominyu-ai"
+
+# 分页（未来文章多时可启用）
+# paginate: 5
+# paginate_path: /page:num/
+
+# 排除文件
+exclude:
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "README.md"
