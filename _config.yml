@@ -1,6 +1,6 @@
 # 站点设置
-title: "郭敏宇的AI笔记"
-description: "专注于分享人工智能、技术思考和阅读心得。"
+title: ""
+description: ""
 baseurl: ""
 url: "https://guominyu-ai.github.io" # 替换为你的网址
 language: "zh-CN"
