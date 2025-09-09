@@ -1,0 +1,18 @@
+<article class="post-preview">
+    <h2 class="post-preview-title">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </h2>
+    
+    <div class="post-preview-meta">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y年%m月%d日" }}</time>
+        {% if site.show_reading_time %}
+            • <span class="reading-time">{% include read-time.html content=post.content %}</span>
+        {% endif %}
+    </div>
+    
+    <div class="post-preview-excerpt">
+        {{ post.excerpt | strip_html | truncatewords: 30 }}
+    </div>
+    
+    <a href="{{ post.url | relative_url }}" class="post-preview-read-more">阅读更多 →</a>
+</article>
