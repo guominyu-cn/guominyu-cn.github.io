@@ -1,0 +1,7 @@
+{% assign words = include.content | number_of_words %}
+{% if words < 360 %}
+    {% assign read_time = "1分钟" %}
+{% else %}
+    {% assign read_time = words | divided_by:180 | append: "分钟" %}
+{% endif %}
+{{ read_time }}
